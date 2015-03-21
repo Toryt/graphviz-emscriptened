@@ -1,10 +1,14 @@
+This project is based on https://github.com/mdaines/viz.js/. THe git approach is described in http://stackoverflow.com/questions/5661405/best-workflow-when-forking-and-renaming-a-github-project.
+
+
+
 Viz.js
 ======
 
 A hack to put Graphviz on the web. You should probably check out dagre, though:
 
-  https://github.com/cpettitt/dagre  
-  https://github.com/cpettitt/dagre-d3  
+  https://github.com/cpettitt/dagre
+  https://github.com/cpettitt/dagre-d3
 
 To render as SVG (produces an XML string):
 
@@ -12,7 +16,7 @@ To render as SVG (produces an XML string):
 
 See examples here:
 
-  http://mdaines.github.io/viz.js/example.html  
+  http://mdaines.github.io/viz.js/example.html
   http://mdaines.github.io/viz.js/form.html
 
 Compiled versions are available on the releases page:
@@ -21,15 +25,15 @@ Compiled versions are available on the releases page:
 
 This project is based on work by Satoshi Ueyama and Brenton Partridge:
 
-  https://github.com/gyuque/livizjs  
+  https://github.com/gyuque/livizjs
   https://github.com/bpartridge/graphviz.js
 
 Thanks to the following contributors:
 
-  jbogard  
-  KylePDavis  
-  siefkenj  
-  srathbun  
+  jbogard
+  KylePDavis
+  siefkenj
+  srathbun
   vmarkovtsev
 
 Usage
