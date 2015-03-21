@@ -17,6 +17,14 @@ render graphs already converted to "dot" output format as-is.
 
 
 
+Changes
+=======
+
+- Removed the submodule for [emscripten]. It is a tool which we want to install, and keep current ourselves.
+  The "checkout" as a submodule does not work as it is in [viz.js] for me, on Mac OS X, in any case.
+- [zlib] is kept as a submodule.
+
+
 
 
 Developing and Building [graphviz-emscriptened]
@@ -141,6 +149,13 @@ What is left over from [viz.js] in this project are
 Since the result of this project is a "translation" of this code, this license applies to the [graphviz-emscriptened]
 build results.
 
+### [zlib]
+
+[zlib] is distributed under the [zlib/libpng license].
+
+Since the result of this project contains a "translation" of this code, this license applies to the [graphviz-emscriptened]
+build results. This is a liberal license. Its subject can be included in a result distributed under the [EPL].
+
 ### [emscripten]
 
 [emscripten] is
@@ -160,6 +175,8 @@ Note that using software released under the [MIT License] in projects under a di
 [EPL]: LICENSE.html
 [MIT License]: http://opensource.org/licenses/MIT
 [graphviz]: http://www.graphviz.org
+[zlib]: http://www.zlib.net
+[zlib/libpng license]: http://www.zlib.net/zlib_license.html
 [viz.js]: https://github.com/mdaines/viz.js/
 [Mike Daines]: https://github.com/mdaines
 [node.js]: https://nodejs.org
