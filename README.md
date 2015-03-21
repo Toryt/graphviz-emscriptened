@@ -48,8 +48,8 @@ In our local repositories, we work with 3 remotes:
 - `upstream` refers to the original [viz.js] project. Our local repository's `upstream-master` branch tracks
   `upstream/master`. This allows us to pull in possible changes to [viz.js] later.
 - `backport` refers to [https://github.com/Toryt/viz.js.git], which is our fork of [viz.js]. Our local repository's
-  `backport` branch refers to the remote `backport\backport` branch. This is where we might originate pull requests to
-  [viz.js] from.
+  `backport-master` branch refers to the remote `backport\master` branch, and `backport-[FEATURE]` to the remote
+  `backport/[FEATURE]` branches. These are where we might originate pull requests to [viz.js] from.
 
 [graphviz-emscriptened] welcomes pull requests on its `master` branch.
 
