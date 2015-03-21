@@ -100,7 +100,7 @@ Acknowledgements
 
 Directly, this work is based on the effort of [Mike Daines](https://github.com/mdaines), who himself acknowledges
 
-- [Ueyama Satoshi](https://github.com/gyuque)
+- [Ueyama Satoshi]
 - [Brenton Partridge](https://github.com/bpartridge)
 - [Jimmy Bogard](https://github.com/jbogard)
 - [Kyle P Davis](https://github.com/KylePDavis)
@@ -118,8 +118,6 @@ And of course, this result would not be possible without the contribution of eve
 Licenses
 ========
 
-### [graphviz-emscriptened]
-
 The [graphviz-emscriptened] project files, and the resulting distribution of the [graphviz-emscriptened] JavaScript
 library, are released under the [Eclipse Public License v1.0 (EPL)][EPL].
 
@@ -131,16 +129,24 @@ the "derivative work". So let's not make things more difficult than necessary ..
 Note that the [EPL] requires that you disclose the source of any derivative work (which [graphviz-emscriptened]
 does at [GitHub][graphviz-emscriptened]).
 
+All other parts are released under the liberal [MIT License], or the [zlib/libpng License].
+
+Copies of all the licenses are included in the source distribution.
+
 ### [viz.js]
 
-[viz.js] doesn't mention any license information. But since the same reasoning applies, it should refer to
-the [EPL] to.
+[viz.js] is distributed under the [MIT License] ([licenses/vizjs]).
 
 What is left over from [viz.js] in this project are
 
 - parts of the `Makefile`,
 - patches to be applied to the [graphviz] source, and
 - the override of the `print` function in `pre.js`.
+
+### [liviz.js]
+
+This project, including the Makefile, uses work by [Satoshi Ueyama](Ueyama Satoshi), made available at
+[liviz.js] under the [MIT License]  ([licenses/livizjs]).
 
 ### [graphviz]
 
@@ -151,10 +157,15 @@ build results.
 
 ### [zlib]
 
-[zlib] is distributed under the [zlib/libpng license].
+[zlib] is distributed under the [zlib/libpng license] ([licenses/zlib]).
 
-Since the result of this project contains a "translation" of this code, this license applies to the [graphviz-emscriptened]
-build results. This is a liberal license. Its subject can be included in a result distributed under the [EPL].
+Since the result of this project contains a "translation" of this code, this license applies to the
+[graphviz-emscriptened] build results. This is a liberal license. Its subject can be included in a result distributed
+under the [EPL].
+
+### [expat]
+
+[expat] is distributed under the [MIT License]  ([licenses/expat]).
 
 ### [emscripten]
 
@@ -162,22 +173,27 @@ build results. This is a liberal license. Its subject can be included in a resul
 [made available under two permissive open source licenses](http://kripken.github.io/emscripten-site/docs/introducing_emscripten/emscripten_license.html):
 the MIT license and the University of Illinois/NCSA Open Source License.
 [emscripten] itself uses portions of [node.js] source code,
-[made available under the MIT license](https://raw.githubusercontent.com/joyent/node/v0.12.0/LICENSE).
+[made available under the MIT license](https://raw.githubusercontent.com/joyent/node/v0.12.0/LICENSE)
+(see [licenses/emscripten]).
 
 Since it is a tool used to create the [graphviz] "derivative work", and it is not included in this project, this is
 not relevant for our license.
 
-Note that using software released under the [MIT License] in projects under a different license is allowed.
+Note that using software released under the [MIT License] and [zlib/libpng license] in projects under a different
+license is allowed.
 
 
 
 [graphviz-emscriptened]: https://github.com/Toryt/graphviz-emscriptened
-[EPL]: LICENSE.html
+[EPL]: LICENSE
 [MIT License]: http://opensource.org/licenses/MIT
 [graphviz]: http://www.graphviz.org
 [zlib]: http://www.zlib.net
 [zlib/libpng license]: http://www.zlib.net/zlib_license.html
+[expat]: http://www.jclark.com/xml/expat.html
 [viz.js]: https://github.com/mdaines/viz.js/
+[liviz.js]: https://github.com/gyuque/livizjs
+[Ueyama Satoshi]: https://github.com/gyuque
 [Mike Daines]: https://github.com/mdaines
 [node.js]: https://nodejs.org
 [io.js]: https://iojs.org/en/index.html
