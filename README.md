@@ -23,6 +23,7 @@ Changes
 - Removed the submodule for [emscripten]. It is a tool which we want to install, and keep current ourselves.
   The "checkout" as a submodule does not work as it is in [viz.js] for me, on Mac OS X, in any case.
 - [zlib] is kept as a submodule.
+- Add a submodule for a patched version of [graphviz]. Stop downloading it, but add a `make` target to `autogen` it.
 
 
 
@@ -43,7 +44,7 @@ To build, execute the default target in the `Makefile`:
 
 The `Makefile` starts by downloading the graphviz and expat source from a fixed version.
 For expat, the latest version is used, which hasn't changed in ages.
-For graphviz, an older version is used. I haven't updated that yet.
+For graphviz, an older version is used. I haven't updated that yet. After the download, graphviz is patched.
 
 These downloads are then expanded in directories, and compiled with `emcc` ([emscripten]),
 first expat, then zlib, then graphviz. graphviz is compiled in bits: the lib (cdt, common, xdot, dotgen, circogen,
@@ -59,13 +60,13 @@ A sourcemapper reports a bunge of files it can't find:
 
     sourcemapper: Unable to find original file for intset.c at /Users/jand/Scratchpad/graphviz-emscriptened/intset.c
 
-Nevermind. It'll work. These are not errors.
-
-* where are the patches applied? *
+Never mind. It'll work. These are not errors.
 
 And that's it.
 
 A viz.js file is generated. It's a 25MB whopper.
+
+
 
 
 

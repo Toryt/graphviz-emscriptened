@@ -4,3 +4,4 @@ release
 *.tar.gz
 viz.js
 viz.js.map
+src/libexpat-2.1.0

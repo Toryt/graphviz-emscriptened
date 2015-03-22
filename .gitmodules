@@ -1,3 +1,6 @@
-[submodule "zlib"]
-	path = zlib
+[submodule "src/zlib"]
+	path = src/zlib
 	url = https://github.com/madler/zlib
+[submodule "src/graphviz"]
+	path = src/graphviz
+	url = https://github.com/Toryt/graphviz.git
