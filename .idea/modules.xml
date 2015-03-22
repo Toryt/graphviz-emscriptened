@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/viz.js.iml" filepath="$PROJECT_DIR$/.idea/viz.js.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/graphviz-emscriptened.iml" filepath="$PROJECT_DIR$/.idea/graphviz-emscriptened.iml" />
     </modules>
   </component>
 </project>
