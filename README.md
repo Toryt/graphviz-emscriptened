@@ -30,9 +30,42 @@ Changes
 Developing and Building [graphviz-emscriptened]
 ===============================================
 
-*TODO*
+How it works
+------------
 
+Before we start, we clean the working space:
 
+    make clobber
+
+To build, execute the default target in the `Makefile`:
+
+    make
+
+The `Makefile` starts by downloading the graphviz and expat source from a fixed version.
+For expat, the latest version is used, which hasn't changed in ages.
+For graphviz, an older version is used. I haven't updated that yet.
+
+These downloads are then expanded in directories, and compiled with `emcc` ([emscripten]),
+first expat, then zlib, then graphviz. graphviz is compiled in bits: the lib (cdt, common, xdot, dotgen, circogen,
+neatogen, twopigen, patchwork, osage, sparse, pack, cgraph, fdpgen, label, gvc, pathplan),
+and plugin (core, dot_layout, neato_layout).
+Finally, `emcc` i asked to put the whole thing together.
+
+A whole lot of warnings are generated, but nothing should fail.
+
+Next up, `clang` is asked to do its stuff.
+
+A sourcemapper reports a bunge of files it can't find:
+
+    sourcemapper: Unable to find original file for intset.c at /Users/jand/Scratchpad/graphviz-emscriptened/intset.c
+
+Nevermind. It'll work. These are not errors.
+
+* where are the patches applied? *
+
+And that's it.
+
+A viz.js file is generated. It's a 25MB whopper.
 
 
 
